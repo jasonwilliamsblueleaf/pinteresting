@@ -42,4 +42,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Required for Heroku and devise
   
+  Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-7.0.3-Q16/convert"
+  
 end
